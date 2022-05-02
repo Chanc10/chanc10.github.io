@@ -4,6 +4,8 @@
 body
 
 {
+background-color: #001022;
+color: silver;
 
 width: 750px;
 
@@ -14,6 +16,7 @@ margin: 0 auto;
 table
 
 {
+background-color: #af523a;
 
 border-collapse: collapse;
 
@@ -27,7 +30,7 @@ thead
 
 {
 
-background-color: yellow;
+background-color: #001022;
 
 }
 
@@ -67,7 +70,7 @@ tbody tr:nth-child(even) td
 
 {
 
-background-color: yellow;
+background-color: #001022;
 
 }
 

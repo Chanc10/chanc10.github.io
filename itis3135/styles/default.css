@@ -1,61 +1,124 @@
-/* got this from coolors.co - please improve!
- https://coolors.co/b5d6b2-53131e-5a464c-fffacc-ffefbd
-*/
-
 body
 {
-	font-family: georgia, verdana;
-	color: rgb(202, 123, 50) ;
-	background-color: rgb(44, 43, 43);
-
-	margin-left: 150px;
-	margin-right: 150px;
+  font-family: Monospace, sans-serif;
+  color: silver;
+  background-color: #001022;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-header, footer
+header
 {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	text-align: center;
+  font-family: Lucidia sans-serif;
+  text-align: center;
+  color: #af523a;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-style: inset;
+  border-color: #af523a;
+}
+
+footer
+{
+	color: #af523a;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 main
 {
-	margin-left: 100px;
-	margin-right: 100px;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-h1, h2, h3
+h1
 {
-	font-family: Cambria, Cochin, Georgia, serif;
-	text-align: center;
-	line-height: 0px;
+  text-align: center;
+  color: #af523a;
+}
+
+h2
+{
+  text-align: center;
+  color: #af523a;
+}
+
+h3
+{
+  text-align: left;
+  color: #af523a;
+}
+
+p
+{
 }
 
 a
 {
-	text-decoration: none;
-	color: lightseagreen;
-	font-weight: bold;
+  color: silver;
+  text-decoration: none;
+}
+
+li
+{
+  margin: 5px 5px 5px 5px;
+}
+
+script
+{
+  text-align: center;
 }
 
 a:hover
 {
-	text-decoration: underline;
-	color: mediumseagreen;
+  text-decoration: underline;
+  color: #af523a;
 }
 
 figure
 {
-	text-align: center;
-}
-
-figcaption
-{
-	font-style: italic;
+  text-align: center;
 }
 
 nav
 {
-	text-align: center;
+  text-align: center;
+}
+
+th, td
+{
+  text-align: left;
+  border: 5px #af523a;
+  vertical-align: middle;
+  padding: .2em 1em .2em .3em;;
+}
+
+th
+{
+  background-color: #2A2E34;
+}
+
+table, th, td
+{
+  table-layout: auto;
+  border: 5px #af523a;
+  border-color: #af523a;
+  margin: 10px auto;
+}
+
+table tr:nth-child(even)
+{
+  background-color: #001d3d;
+}
+
+form
+{
+  background-color: #af523a;
+  color: #001d3d;
+  text-align: center;
+  border-style: inset;
+  margin-top: 50px;
+  
 }

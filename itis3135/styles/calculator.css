@@ -1,0 +1,243 @@
+body
+{
+  font-family: Monospace, sans-serif;
+  color: silver;
+  background-color: #001d3d;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+header
+{
+  font-family: Lucidia sans-serif;
+  text-align: center;
+  color: #af523a;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-style: inset;
+  border-color: #af523a;
+}
+
+footer
+{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+main
+{
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1, h2, h3
+{
+  text-align: center;
+  color: #af523a;
+}
+
+p
+{
+  text-align: center;
+}
+
+a
+{
+  color: silver;
+  text-decoration: none;
+}
+
+script
+{
+  text-align: center;
+}
+
+a:hover
+{
+  text-decoration: underline;
+  color: #af523a;
+}
+
+figure
+{
+  text-align: center;
+}
+
+nav
+{
+  text-align: center;
+}
+
+th, td
+{
+  text-align: left;
+  border: 1px #af523a;
+  vertical-align: middle;
+  padding: .2em 1em .2em .3em;;
+}
+
+th
+{
+  background-color: #2A2E34;
+}
+
+table
+{
+  table-layout: auto;
+  border-style: groove;
+  border-color: #af523a;
+  margin: 0px auto;
+}
+
+table tr:nth-child(even)
+{
+  background-color: #001d3d;
+}
+
+form
+{
+  background-color: #af523a;
+  color: #001d3d;
+  text-align: center;
+  border-style: inset;
+  margin-top: 50px;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Responsive Images */
+  
+  embed,
+  iframe,
+  img,
+  object,
+  video {
+    max-width: 100%;
+  }
+  
+  a:focus {
+    outline: none;
+  }
+  
+  /* Removes all decimals and discs from lists */
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  /* 
+   * Completely resets form items
+   * ----------------------------
+   * Super hard reset that removes all borders
+   * and radiuses of all form items (including
+   * checkboxes and radios)
+   */
+  
+  input,
+  textarea,
+  button {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    outline: none;
+    appearance: none;
+    text-align: left;
+  }
+  
+  input:hover,
+  input:active,
+  input:focus,
+  textarea:hover,
+  textarea:active,
+  textarea:focus,
+  button:hover,
+  button:active,
+  button:focus {
+    outline: none;
+  }
+  
+  :root {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 20em;
+  }
+  
+  .container > p {
+    text-align: center;
+  }
+  
+  .calculator {
+    border-radius: 12px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    max-width: 15em;
+    overflow: hidden;
+  }
+  
+  .calculator__display {
+    background-color: #0a0a0a;
+    color: #af523a;
+    font-size: 1.714285714em;
+    padding: 0.5em 0.75em;
+    text-align: right;
+  }
+  
+  .calculator__keys {
+    background-color: #999;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .calculator__keys > * {
+    background-color: #fff;
+    padding: 0.5em 1.25em;
+    position: relative;
+    text-align: center;
+  }
+  
+  .calculator__keys > *:active::before,
+  .calculator__keys > .is-depressed::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .key--operator {
+    background-color: #eee;
+  }
+  
+  .key--equal {
+    background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+    grid-column: -2;
+    grid-row: 2 / span 4;
+  }
