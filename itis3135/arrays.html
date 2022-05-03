@@ -1,0 +1,78 @@
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Chandler Crisp | ITIS3135 | Arrays</title>
+    <link href="styles/default.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Chandler Crisp <span style='font-size:50px;'>&#8703;</span> ITIS 3135</h1>
+    
+    <nav>
+    <a href="index.html">Home</a> 
+    ||
+    <a href="introduction.html">Introduction</a> 
+    ||
+    <a href="contract.html">Contract</a>
+    ||
+    <a href="tables.html">Table Sample</a>
+    ||
+    <a href="forms.html">Forms Sample</a>
+    ||
+    <a href="creativecatsinc.com/index.html">Brand</a>
+    ||
+    <a href="stuff.edu/FoRTNite42069.html">Bad Design</a>
+    ||
+    <a href="firstscripts.html">First JS</a>
+    ||
+    <a href="polygons.html">Polygons</a>
+    ||
+    <a href="calculator.html">Calculator</a>
+    ||
+    <a href="arrays.html">Arrays</a>
+    ||
+    <a href="exercise/Crisp-Activity_Accessibility.html">Accessibility</a>
+    </nav>	
+    </header>
+    <main>
+
+        <form class="form-1">
+            <label for="employeename">Enter employee name:</label>
+            <select id="employeename">
+                <option value="Chandler Crisp">Chandler Crisp</option>
+                <option value="Khalil Shew">Khalil Shew</option>
+                <option value="Koby Richardson">Koby Richardson</option>
+            </select>
+            <label for="employeesalary">Enter employee salary:</label>
+            <input type="text" id="employeesalary" placeholder="Salary ($)" />
+        </form>
+        <div class="div-1">
+            <div class="arraycontrols">
+                <button class="arraybutton" id="addsalary" onclick="addSalary();">Add Salary</button>
+                <button class="arraybutton" id="displayresults" onclick="displayResults();">Display Results</button>
+                <button class="arraybutton" id="displaysalary" onclick="displaySalary();">Display Salary</button>
+            </div>
+        </div>
+        <br />
+        <h3 id="results"></h3>
+        <h3 id="testline"></h3>
+        <h3 id="testline2"></h3>
+        <div class="div-1">
+            <table class="centered-table" id="employeetable">
+                <thead>
+                    <tr>
+                        <th>Employee:</th>
+                        <th>Salary:</th>
+                    </tr>
+                </thead>
+                <tbody id="employeetablebody"></tbody>
+            </table>
+        </div>
+    </main>
+    
+    <div data-include="components/footer.html"></div> 
+    <script src="scripts/htmlinclude.js"></script>
+    <script src="scripts/arrays.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+    font-family:Monospace, sans-serif;
+    color: #af523a;
+    margin: 0 auto;
+    padding: 20px;
+    width: 640px;
+    border: 10px double #af523a;
+    background-color: #001022;
+    }
+    h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+    }
+    h1 {
+    padding-bottom: .25em;
+    }
+    h2 {
+    font-size: 120%;
+    padding: .5em 0 .25em;
+    }
+    li {
+    padding-right: 10px;
+    display: inline;
+    }

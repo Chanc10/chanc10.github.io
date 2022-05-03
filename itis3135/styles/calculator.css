@@ -2,7 +2,7 @@ body
 {
   font-family: Monospace, sans-serif;
   color: silver;
-  background-color: #001d3d;
+  background-color: #001022;
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -80,7 +80,7 @@ th, td
 
 th
 {
-  background-color: #2A2E34;
+  background-color: #001022;
 }
 
 table
@@ -93,13 +93,13 @@ table
 
 table tr:nth-child(even)
 {
-  background-color: #001d3d;
+  background-color: #001022;
 }
 
 form
 {
   background-color: #af523a;
-  color: #001d3d;
+  color: #001022;
   text-align: center;
   border-style: inset;
   margin-top: 50px;

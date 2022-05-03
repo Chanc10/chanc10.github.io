@@ -87,6 +87,78 @@ nav
   text-align: center;
 }
 
+.arraycontrols
+{
+    display: grid;
+    margin-left: 27%;
+    margin-right: 33%;
+    justify-items: center;
+    background-color: #af523a;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 50%;
+}
+
+.arraybuttons
+{
+    display: inline;
+    background-color: #FBC4AB;
+    gap: 2px;
+    width: 33%;
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownbutton 
+{
+    background-color: #DD403A;
+    font-family: Courier, serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #B4EDD2;
+    padding: 5px;
+    border: none;
+}
+
+.dropdownbutton:hover
+{
+    color: #27474E;
+}
+
+.dropdowncontent 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncontent a 
+{
+    color: #27474E;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdowncontent
+{
+    
+    display: block;
+}
+
+.dropdown:hover .dropdownbutton
+{
+    background-color: #DD403A;
+}
+
 th, td
 {
   text-align: left;

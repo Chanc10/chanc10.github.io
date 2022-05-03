@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title> Chandler Crisp | ITIS 3135 | Creative Cats | Slideshow</title>
+    <link href = "styles/slideshow.css" type = "text/css" rel = "stylesheet">
+    <script src="scripts/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div data-include="components/header.html"></div>
+
+        <h2>Slideshow</h2>
+
+        <div class="image-container">
+
+          <a class="previous" onclick="moveSlides(-1)">
+            <i class="fa fa-chevron-circle-left"></i>
+          </a>
+
+          <a class="next" onclick="moveSlides(1)">
+            <i class="fa fa-chevron-circle-right"></i>
+          </a>
+
+          <div class="slide">
+            <div class="slideNumber">1</div>
+
+            <img src="images/bear.jpg" alt="Grizzly Bear">
+          </div>
+
+          <div class="slide">
+            <div class="slideNumber">2</div>
+
+            <img src="images/caribou.jpg" alt="Caribou">
+          </div>
+
+          <div class="slide">
+            <div class="slideNumber">3</div>
+
+            <img src="images/chamois.jpg" alt="Chamois">
+          </div>
+
+          <div class="slide">
+            <div class="slideNumber">4</div>
+
+            <img src="images/fox.jpg" alt="Red Fox">
+          </div>
+
+          <div class="slide">
+            <div class="slideNumber">5</div>
+
+            <img src="images/lion.jpg" alt="Lion">
+          </div>
+        </div><br>
+
+        <div style="text-align: center">
+          <span class="footerdot" onclick="activeSlide(1)"></span>
+          <span class="footerdot" onclick="activeSlide(2)"></span>
+          <span class="footerdot" onclick="activeSlide(3)"></span>
+          <span class="footerdot" onclick="activeSlide(4)"></span>
+          <span class="footerdot" onclick="activeSlide(5)"></span>
+        </div>
+
+    <div data-include="components/footer.html"></div>
+    
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/htmlinclude.js"></script>
+</body>
+</html>
