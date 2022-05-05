@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title> Chandler Crisp | ITIS 3135 | Hobby</title>
+    <script src="scripts/hobby.js"></script>
+    <style>
+        header{
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            text-align: left;
+            font-size: 50px;
+            margin-top: 25px;
+        }
+
+        body
+        {
+            font-family: Monospace, sans-serif;
+            color: #ffa33a;
+            background-color: #0c2135;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        main{
+            text-align: left;
+        }
+
+        h1, h2, h3{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        a:hover
+        {
+            background-color: #ffa33a;
+            color: #0c2135;
+        }
+
+
+        .tab{
+            overflow: inherit;
+            border: 5px #ffa33a;
+            background-color: #ffa33a;
+            text-align: center;
+        }
+
+        .tabButtons{
+            float: left;
+            padding: 15px 15px;
+            background-color: #0c2135;
+            transition: 0.1s;
+            color: #ffa33a;
+        }
+
+        .tabButtons.active{
+            background-color: #ffa33a;
+            color: #0c2135;
+        }
+
+        .tabContent{
+            border: 1px #ffa33a;
+            display: none;
+
+        }
+
+        img{
+            border-radius: 45px;
+            border-style: solid;
+            border-color: #ffa33a;
+        }
+
+        figure{
+            text-align: center;
+        }
+
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+      <h1>Gaming</h1>
+    </header>
+
+    <main>
+        <div class="tab">
+            <button class="tabButtons" onclick="openTab(event, '1')">About Me</button>
+            <button class="tabButtons" onclick="openTab(event, '2')">The Legend of Zelda</button>
+            <button class="tabButtons" onclick="openTab(event, '3')">Call of Duty</button>
+            <button class="tabButtons" onclick="openTab(event, '4')">Minecraft</button>
+            <button class="tabButtons" onclick="openTab(event, '5')">Rocket League</button>
+            <button class="tabButtons" onclick="openTab(event, '6')">Valorant</button>
+        </div><br>
+
+        <section id="1" class="tabContent">
+            <h3>About Me</h3>
+            <p>
+                Hello! My name is Chandler Crisp, I am a Computer Science major at UNC Charlotte and I love playing video games. I can remember 
+                first picking up a GameBoy when I was five years old, and from that day on I knew I would love gaming. This site will explore five
+                of my favorite games and franchises. Over the years I have owned many different consoles, played a ton of games, and made lifelong
+                friendships with people I never knew I would meet!
+            </p>
+            <figure>
+                <img src="images/gamecube.jpg">
+                <img src="images/gameboy.jpg">
+            </figure>
+            <p>The GameCube and GameBoy were 2 of the first consoles I played as a child. Both of these have an icredible library of classic
+                Nintendo games!
+            </p>
+        </section>
+
+        <section id="2" class="tabContent">
+            <h3>The Legend of Zelda</h3>
+            <p>
+            The Legend of Zelda is one of my all time favorite video game franchises. While there are many entries on many different platforms, 
+            most of them follow the same structure: Link, a commoner, is often thrown into a mysterious quest in the kingdom of Hyrule to save
+            the princess, Zelda, from some form of evil, the most common being Ganondorf.    
+            </p>
+            <figure>
+                <img src="images/zelda.jpg">
+            </figure>
+            <p>This is a collage of the many iterations of Link throughout the years.</p>
+        </section>
+
+        <section id="3" class="tabContent">
+            <h3>Call of Duty</h3>
+            <p>
+                Call of Duty was the first shooter franchise that I got into as a kid. There have been many installments by different developers 
+                with different characters and plots. However, all games are still a first-person shooter with a somewhat similar feel. My favorite 
+                game in this series would have to be Call of Duty: Black Ops 3, which released in 2015.
+            </p>
+            <figure>
+                <img src="images/bo3.jpg">
+            </figure>
+            <p>This is a picture of the cover art for Call of Duty: Black Ops 3</p>
+        </section>
+
+        <section id="4" class="tabContent">
+            <h3>Minecraft</h3>
+            <p>
+                Minecraft is one of the bestselling video games of all time, and for good reason. In this building block game, you can do pretty 
+                much whatever you can think of. This game released in 2011 and became one of the most played games in the world around 2014, and 
+                it is still at that status today.
+            </p>
+            <figure>
+                <img src="images/castle.jpg">
+            </figure>
+            <p>In Minecraft you can create massive structures from just one block, like the castle pictured above.</p>
+        </section>
+
+        <section id="5" class="tabContent">
+            <h3>Rocket League</h3>
+            <p>
+                Rocket League is the game that I am currently having the most fun with, probably because it combines 
+                two of my favorite things: soccer and cars! Rocket League is a soccer game, but you are driving a car 
+                instead of controlling a player. You can boost up in the air, drive up the wall, and hit crazy pinch
+                shots with other cars.
+            </p>
+            <figure>
+                <img src="images/rocketleague.jpg">
+            </figure>
+        </section>
+
+        <section id="6" class="tabContent">
+            <h3>Valorant</h3>
+            <p>
+                Valorant is an FPS style shooter that released in the summer of 2020. I started playing this game
+                when it came out because I was super bored with covid and everything keeping me inside a lot.
+                At first I hated this game because it has a very large skill gap and it takes a bit of grinding 
+                to figure eveything out. With that being said, I still enjoy this game a lot and I try to play it when 
+                I have some free time.
+            </p>
+            <figure>
+                <img src="images/valorant.jpg">
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <br> 
+        <p> Created by <a href="creativecatsinc.com/index.html">Crispy Designs &copy;2022</a></p>
+            <p>
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fjruss8%2Fitis3135%2Fintroduction.html">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
+            
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fjruss8%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                    <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+            </p>
+        <script>        
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </footer>
+  </body>
+</html>
