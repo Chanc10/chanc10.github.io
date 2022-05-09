@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
@@ -5,35 +6,7 @@
     <link href="styles/default.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <h1>Chandler Crisp <span style='font-size:50px;'>&#8703;</span> ITIS 3135</h1>
-    
-    <nav>
-    <a href="index.html">Home</a> 
-    ||
-    <a href="introduction.html">Introduction</a> 
-    ||
-    <a href="contract.html">Contract</a>
-    ||
-    <a href="tables.html">Table Sample</a>
-    ||
-    <a href="forms.html">Forms Sample</a>
-    ||
-    <a href="creativecatsinc.com/index.html">Brand</a>
-    ||
-    <a href="stuff.edu/FoRTNite42069.html">Bad Design</a>
-    ||
-    <a href="firstscripts.html">First JS</a>
-    ||
-    <a href="polygons.html">Polygons</a>
-    ||
-    <a href="calculator.html">Calculator</a>
-    ||
-    <a href="arrays.html">Arrays</a>
-    ||
-    <a href="exercise/Crisp-Activity_Accessibility.html">Accessibility</a>
-    </nav>	
-    </header>
+    <div data-include="components/header.html"></div>
     <main>
 
         <form class="form-1">
@@ -53,10 +26,9 @@
                 <button class="arraybutton" id="displaysalary" onclick="displaySalary();">Display Salary</button>
             </div>
         </div>
-        <br />
-        <h3 id="results"></h3>
-        <h3 id="testline"></h3>
-        <h3 id="testline2"></h3>
+        <br>
+        <h3 id="results">:</h3>
+    
         <div class="div-1">
             <table class="centered-table" id="employeetable">
                 <thead>

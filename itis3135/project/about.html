@@ -17,7 +17,7 @@
 <nav class="tabs">
     <header>The Buckin' Babe <img src = "project_images/logosmall.png" alt="logo"></header>
     <ul>
-        <li><a href="index.html"></i>The Buckin' Babe</a></li>
+        <li><a href="index.html">The Buckin' Babe</a></li>
         <li><a id="activeBlock" href="./"><i class="fa-solid fa-user"></i>About</a></li>
         <li><a href="gallery.html"><i class="fa-solid fa-camera"></i>Gallery</a></li>
         <li><a href="clothing.html"><i class="fa-solid fa-shirt"></i>Clothing</a></li>
@@ -43,21 +43,21 @@
         <br>
         <h2>Inquiry</h2>
         <form action="#">
-            <input id="fname" type="text" id="firstname" placeholder="First Name" required>
-            <input id="lname" type="text" id="lastname" placeholder="Last Name" required>
-            <input id="" type="text" id="phone" placeholder="Phone Number" required>
-            <input id="" type="text" id="email" placeholder="E-mail Address" required>
+            <input  type="text" id="firstname" placeholder="First Name" required>
+            <input  type="text" id="lastname" placeholder="Last Name" required>
+            <input  type="text" id="phone" placeholder="Phone Number" required>
+            <input  type="text" id="email" placeholder="E-mail Address" required>
 
             <br><br>
 
-            <label for="inquiry">I am interested in...</label>
-            <select id="typeInquiry" id="inquiry" placeholder="Inquiry">
+            <label for="typeInquiry">I am interested in...</label>
+            <select id="typeInquiry">
                 <option value="ClothingF">Clothing (Female)</option>
                 <option value="ClothingM">Clothing (Male)</option>
                 <option value="Freshies">Freshies</option>
             </select>
             
-            <textarea rows="5 "id="message" placeholder="Please add any extra details about your inquiry that will help us find the perfect products for you!" required></textarea>
+            <textarea rows="5" id="message" placeholder="Please add any extra details about your inquiry that will help us find the perfect products for you!" required></textarea>
 
             <input type="submit" onclick="contactUs()" value="Submit">
 
@@ -68,11 +68,21 @@
 <footer>
     
     <h3>Crispy Designs &copy;2022</h3>
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="project_images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
-    
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src="project_images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+    <p>
+        <button onclick = "htmlValidate();" type = "button" name = "validation_link_html" id = "validation_link_html">HTML Validation</button>
+        <button onclick = "cssValidate();" type = "button" name = "validation_link_css" id = "validation_link_css">CSS Validation</button>
+    </p>
+        <script>
+            function htmlValidate()
+            {
+                window.open("https://validator.w3.org/check?uri=" + location.href, "_blank");
+            }
+
+            function cssValidate() 
+            {
+                window.open("https://jigsaw.w3.org/css-validator/validator?uri=" + location.href, "_blank");
+            }
+        </script>
     
 </footer>
 </body>

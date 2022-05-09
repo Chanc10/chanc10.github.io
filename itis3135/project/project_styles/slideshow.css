@@ -129,8 +129,6 @@ header{
   }
   
   img{
-    padding: 10px;
-    border-radius: 45px;
     border-color: #2a2e34;
   }
 
@@ -138,7 +136,7 @@ header{
     max-width: 800px;
     position: relative;
     margin: auto;
-    align-items: left;
+    align-items: center;
   }
   
   .image-container{
@@ -221,4 +219,5 @@ header{
     background-color: black;
 }
     
+
     

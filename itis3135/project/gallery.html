@@ -8,9 +8,10 @@
     <title>The Buckin' Babe</title>
     
 </head>
+<body>
 
 <nav class="tabs">
-    <header>The Buckin' Babe <img src = "project_images/logosmall.png"></header>
+    <header>The Buckin' Babe <img src = "project_images/logosmall.png" alt="logo small"></header>
     <ul>
         <li><a href="index.html">The Buckin' Babe</a></li>
         <li><a href="about.html"><i class="fa-solid fa-user"></i>About</a></li>
@@ -19,31 +20,41 @@
         <li><a href="freshies.html"><i class="fa-solid fa-spray-can-sparkles"></i>Freshies</a></li>
     </ul>
 </nav>
-<body>
+
 <div id="gallery">
-   <img src="project_images/bags.png">
-   <img src="project_images/earring1.png">
-   <img src="project_images/plant.png">
-   <img src="project_images/model3.png">
-   <img src="project_images/salty.png">
-   <img src="project_images/dress.png">
-   <img src="project_images/yellowstone.png">
-   <img src="project_images/hat.PNG">
-   <img src="project_images/earring2.PNG">
-   <img src="project_images/earring3.png">
-   <img src="project_images/model1.png">
-   <img src="project_images/model2.png">
+   <img src="project_images/bags.png" alt = "bags">
+   <img src="project_images/earring1.png" alt="earring 1">
+   <img src="project_images/plant.png" alt="plant">
+   <img src="project_images/model3.png" alt="model 3">
+   <img src="project_images/salty.png" alt="hoodie">
+   <img src="project_images/dress.png" alt="dress">
+   <img src="project_images/yellowstone.png" alt="tee">
+   <img src="project_images/hat.PNG" alt="hat">
+   <img src="project_images/earring2.PNG" alt="earring 2">
+   <img src="project_images/earring3.png" alt="earring 3">
+   <img src="project_images/model1.png" alt="model 1">
+   <img src="project_images/model2.png" alt="model 2">
 </div>
 
 <br><br><br>
 <footer>
     
     <h3>Crispy Designs &copy;2022</h3>
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="project_images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
-    
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src="project_images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+    <p>
+        <button onclick = "htmlValidate();" type = "button" name = "validation_link_html" id = "validation_link_html">HTML Validation</button>
+        <button onclick = "cssValidate();" type = "button" name = "validation_link_css" id = "validation_link_css">CSS Validation</button>
+    </p>
+        <script>
+            function htmlValidate()
+            {
+                window.open("https://validator.w3.org/check?uri=" + location.href, "_blank");
+            }
+
+            function cssValidate() 
+            {
+                window.open("https://jigsaw.w3.org/css-validator/validator?uri=" + location.href, "_blank");
+            }
+        </script>
    
 </footer>
 <script src = "project_scripts/gallery.js"></script>

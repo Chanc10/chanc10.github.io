@@ -29,21 +29,56 @@
     <br>
     <img src = "project_images/logo.png" alt="Big logo" class = "center">
 
-    <h1>Western
-            <i class='fas fa-hat-cowboy' style='font-size:24px'></i>
-        Freshies  
-            <i class='fas fa-hat-cowboy' style='font-size:24px'> </i>
-        Clothing
-    </h1>
+    
+        
+        <div class="waviy">
+            <span style="--i:1">W</span>
+            <span style="--i:2">E</span>
+            <span style="--i:3">S</span>
+            <span style="--i:4">T</span>
+            <span style="--i:5">E</span>
+            <span style="--i:6">R</span>
+            <span style="--i:7">N</span>
+            <span style="--i:9"><i class='fas fa-hat-cowboy' style='font-size:24px'></i></span>
+            <span style="--i:10">F</span>
+            <span style="--i:11">R</span>
+            <span style="--i:12">E</span>
+            <span style="--i:13">S</span>
+            <span style="--i:14">H</span>
+            <span style="--i:15">I</span>
+            <span style="--i:16">E</span>
+            <span style="--i:17">S</span>
+            <span style="--i:18"><i class='fas fa-hat-cowboy' style='font-size:24px'></i></span>
+            <span style="--i:19">C</span>
+            <span style="--i:20">L</span>
+            <span style="--i:21">O</span>
+            <span style="--i:22">T</span>
+            <span style="--i:23">H</span>
+            <span style="--i:24">I</span>
+            <span style="--i:25">N</span>
+            <span style="--i:26">G</span>
+           </div>
+
+    
     
     <br><br><br><br><br><br><br>
             <footer>
                 <h3>Crispy Designs &copy;2022</h3>
-                    <a href="https://validator.w3.org/check?uri=referer">
-                        <img src="project_images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
-                
-                        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                        <img src="project_images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+                <p>
+                    <button onclick = "htmlValidate();" type = "button" name = "validation_link_html" id = "validation_link_html">HTML Validation</button>
+                    <button onclick = "cssValidate();" type = "button" name = "validation_link_css" id = "validation_link_css">CSS Validation</button>
+                </p>
+                    <script>
+                        function htmlValidate()
+                        {
+                            window.open("https://validator.w3.org/check?uri=" + location.href, "_blank");
+                        }
+            
+                        function cssValidate() 
+                        {
+                            window.open("https://jigsaw.w3.org/css-validator/validator?uri=" + location.href, "_blank");
+                        }
+                    </script>
         
     </footer>
     <script src = "scripts/htmlinclude.js"></script>
