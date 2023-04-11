@@ -1,10 +1,3 @@
-const express = require('express');
-const app = express();
-const cors = require('cors');
-
-// Enable CORS
-app.use(cors());
-
 // Define the button and count elements
 const button = document.getElementById('button');
 const count = document.getElementById('count');
