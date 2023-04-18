@@ -17,8 +17,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transform: scale(1.25);
-    overflow: hidden;
   }
+
+  #gameBoard {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    background-color: #4e4d4d; /* Set the background color to light gray */
+  }  
   
   input {
     display: none;
@@ -43,7 +49,7 @@
     font-size: 20px;
     text-align: center;
     text-shadow: 0 3px 5px var(--red2), 0 5px 10px var(--red2), 0 5px 10px var(--red2), 0 5px 10px var(--red2), 0 5px 10px var(--red2);
-    color: #fff;
+    color: #ffffff;
     letter-spacing: 0.4px;
     overflow: hidden;
     outline: 0 !important;
